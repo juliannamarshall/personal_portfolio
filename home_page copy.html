@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to Fraunces font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                background-color: #F2F0EF;
+                margin: 0;
+                font-family: 'Fraunces', serif;
+            }
+
+            h1, h3 {
+                color: black;
+                font-weight: 500;
+            }
+
+            p {
+                color: black;
+                font-weight: 300;
+                font-size: larger;
+            }
+
+            ul {
+                font-weight: 300;
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul li {
+                margin-bottom: 30px;
+            }
+
+            hr {
+                margin-top: 40px;
+            }
+
+            a {
+                color: black;
+                font-weight: 300;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .image {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            /* Flex container for the links */
+            .links-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-around;
+            }
+
+            /* Adjust iframe for responsive layout */
+            iframe {
+                width: 100%;
+                max-width: 400px;
+                height: 200px;
+                margin: 10px 0;
+            }
+
+            .contact-info {
+                font-size: small;
+                position: absolute;
+                top: 2%;
+                right: 0%;
+            }
+
+            /* Header and intro styling */
+            h1 {
+                margin: 20px;
+            }
+
+            .intro {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translateY(-50%);
+            }
+
+            /* Adjust the positioning for mobile responsiveness */
+            @media (max-width: 768px) {
+                .intro {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    transform: none;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+
+                .image {
+                    width: 70%; /* Resize images for smaller screens */
+                    margin-bottom: 20px;
+                }
+
+                ul li {
+                    text-align: center;
+                }
+
+                .links-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                iframe {
+                    width: 90%; /* Make iframes take up more space on smaller screens */
+                    height: auto;
+                }
+
+                .contact-info {
+                    position: static;
+                    font-size: small;
+                    margin-top: 10px;
+                }
+            }
+
+            /* For very small screens (mobile phones) */
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: small;
+                }
+
+                ul li {
+                    font-size: smaller;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+        
+        <title>Julianna Marshall Portfolio</title>
+    </head>
+    <body>
+        <h1>Welcome to my portfolio!</h1>
+        <p class="contact-info">juliannamarshall03@gmail.com</p>
+        <p class="contact-info">(816) 988-6221</p>
+
+        <div class="intro">
+            <img src="julianna_picture.jpg" width="250" height="350" alt="Picture of Julianna Marshall" style="border: 2px solid black;">
+            <h3>Hi there! My name is Julianna Marshall, thank you for reaching my page!</h3>
+            <p>A little bit about me:</p>
+            <ul>
+                <li>I'm a Computer Science and Digital Media student at Northwest Missouri State University</li>
+                <li>I'm from Kansas City, MO</li>
+                <li>I'm graduating in May 2026</li>
+                <li>I'm looking for internship opportunities in Web Development</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h3>My programming and designing history:</h3>
+        <p>I started programming in the Fall of 2022. I've had experience in all types of languages; Python, Java, HTML, and C are just some examples. My favorite languages that I've learned are Java and HTML, and I've also really enjoyed getting to design flyers for my sorority and for the School of Computer Science and Information Systems.</p>
+        <p>Below I have linked some of my projects that I have worked on throughout my time in college!</p>
+
+        <h3>HTML Webpages</h3>
+        <div class="links-container">
+            <a href="https://juliannamarshall.github.io/myFirstPage/HTML&CSSAssignmnet.html">My First Web Page</a>
+            <a href="https://juliannamarshall.github.io/44563-webapps-f24-assignment3-final-juliannamarshall/">Basic HTML Concepts</a>
+            <a href="https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment4-juliannamarshall/greekplay.html">Basic CSS Concepts</a>
+        </div>
+
+        <div class="iframe-container">
+            <iframe src="https://juliannamarshall.github.io/myFirstPage/HTML&CSSAssignmnet.html"></iframe>
+            <iframe src="https://juliannamarshall.github.io/44563-webapps-f24-assignment3-final-juliannamarshall/"></iframe>
+            <iframe src="https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment4-juliannamarshall/greekplay.html"></iframe>
+        </div>
+
+        <h3>Flyer Designs</h3>
+        <div class="image-container">
+            <a href="https://www.canva.com/design/DAFw-xZ9SD4/4ccGGvgMXIJMinPCaj6asA/edit?utm_content=DAFw-xZ9SD4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="march_of_dimes.png" class="image" alt="March of Dimes Ribbon Relay Race Flyer">
+            </a>
+            <a href="https://www.canva.com/design/DAFqrzJhrqQ/uo-PeFFJnWAusBK-f7NXDg/edit?utm_content=DAFqrzJhrqQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="rockin_for_robbie.png" class="image" alt="Rockin' For Robbie Lip Sync Battle Flyer">
+            </a>
+            <a href="https://www.canva.com/design/DAGRBfPWkVc/H-F7FSq1LT1mtI_-A3coHg/edit?utm_content=DAGRBfPWkVc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="programming_contest.png" class="image" alt="Programming Contest Flyer">
+            </a>
+            <a href="https://www.canva.com/design/DAGRCJxC2Rc/Xff26h0TeTMP-7iLeq6Y0A/edit?utm_content=DAGRCJxC2Rc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="bilal_clarance.png" class="image" alt="Bilal Clarance Speaker Flyer">
+            </a>
+            <a href="https://www.canva.com/design/DAGS_ZWucic/MtXdHNPbo52dM4oZI-9Qxg/edit?utm_content=DAGS_ZWucic&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                <img src="makers_space.png" class="image" alt="Makers Space Scavenger Hunt Flyer">
+            </a>
+        </div>
+
+    </body>
+</html>
