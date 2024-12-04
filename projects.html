@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Link to Fraunces font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            body {background-color: #f1f1f0; font-family: 'Fraunces', serif;}
+
+            /*Navbar*/
+            .navbar ul{list-style-type: none; background-color: #fcc97c; padding: 0px; margin: 0px; overflow: hidden;}
+            .navbar a{color: white; text-decoration: none; padding: 15px; display: block; text-align: center;}
+            .navbar a:hover{background-color: #fddaa5;}
+            .navbar li{float: right;}
+            div.sticky{position: sticky; top: 0px; border: 2px solid #faab32; z-index: 1000;}
+
+            /*Scroller*/
+            ::-webkit-scrollbar{width: 10px;}
+            ::-webkit-scrollbar-track{background: #436a96;}
+            ::-webkit-scrollbar-thumb{background: #86a8e1;}
+            ::-webkit-scrollbar-thumb:hover{background: #acc3ea;}
+        </style>
         <title>Projects</title>
     </head>
     <body>
+        <!--Navbar-->
+        <div class="sticky">
+            <nav class="navbar">
+                <ul>
+                    <li style="float: left; color: #74a3f3; padding: 15px; font-size: 32px;"><b>Welcome to my portfolio!</b></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="home_page.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>I'm sorry!</h1>
         <h4>This page is currently under construction. Stay tuned to see the finished product!</h4>
     </body>
