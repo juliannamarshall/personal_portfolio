@@ -28,6 +28,15 @@
             .content-text{max-width: 600px;}
             .background-image{position: absolute; top: 3; left: 15; width: auto; height: 66%; z-index: 1;}
             .welcome{background-color: #ffffcf; border: 10px solid #ffffcf; color: #436a96}
+            .type{white-space: nowrap; overflow: hidden; animation: typewriter 3s steps(9) infinite alternate, blink 800ms steps(9) infinite normal; border-right: 5px solid #436a96;}
+            @keyframes typewriter{
+                from {width: 0%;}
+                to{width: 57%;}
+            }
+            @keyframes blink{
+               from {border-color: #436a96;}
+               to{border-color: transparent;} 
+            }
 
             /*About Me*/
             .about{color: #436a96;}
@@ -59,8 +68,8 @@
             <img src="julianna_picture.jpg" alt="Picture of Julianna Marshall" width="250" height="350" style="border: 5px solid #c1ff72; box-shadow: 0 0 0 5px #4bb983; margin-left: 200px; margin-right: 100px;">
             <div class="content-text">
                 <div class="welcome">
-                    <h2 style="text-align: center; font-size: 45px; margin-top: 5px;">Hi there!</h2>
-                    <h2 style="text-align: center;">I'm Julianna Marshall,<br>thank you for reaching my page!</h2>
+                    <h2 class="type" style="text-align: center; font-size: 45px; margin-top: 5px;">Hi there!</h2>
+                    <h2 style="text-align: left;">I'm Julianna Marshall,<br>thank you for reaching my page!</h2>
                 </div>
             </div>  
         </div>
