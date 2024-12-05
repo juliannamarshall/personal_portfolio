@@ -29,9 +29,11 @@
             .content-wrapper{display: flex; align-items: center; margin: 20px; position: relative; z-index: 2;}
             img{max-width: 100%; height: auto;}
             .content-text{max-width: 600px;}
-            .welcome{background-color: #ffffcf; border: 10px solid #ffffcf; color: #436a96}
-            .video-container{position: absolute; top: 15px; left: 15px; width: 100%; max-width: 325px; margin-top: 65px; overflow: hidden;}
-            .video-container video{width: 100%; height: auto; display: block;}
+            .welcome{background-color: #ffffcf; border: 10px solid #ffffcf; box-shadow: 0 0 0 5px #ffffa1; color: #436a96}
+            .video-container1{position: absolute; top: 15px; left: 15px; width: 100%; max-width: 325px; margin-top: 65px; overflow: hidden;}
+            .video-container1 video{width: 100%; height: auto; display: block;}
+            .video-container2{position: absolute; top: 65px; right: 15px; width: 100%; max-width: 450px; margin-top: 120px; overflow: hidden;}
+            .video-container2 video{width: 100%; height: auto; display: block;}
             .type{white-space: nowrap; overflow: hidden; animation: typewriter 3s steps(9) infinite alternate, blink 800ms steps(9) infinite normal; border-right: 5px solid #436a96;}
             @keyframes typewriter{
                 from {width: 0%;}
@@ -85,9 +87,15 @@
 
         <!--Welcome-->
         <br>
-        <div class="video-container">
+        <div class="video-container1">
             <video autoplay muted playsinline>
                 <source src="groovy.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
+        </div>
+        <div class="video-container2">
+            <video autoplay muted playsinline>
+                <source src="groovy2.mp4" type="video/mp4">
                 Your browser does not support the video tag
             </video>
         </div>
