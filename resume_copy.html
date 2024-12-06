@@ -7,52 +7,120 @@
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 
         <title>Resume</title>
-        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="icon" type="image/x-icon" href="page designs/icon.png">
 
         <style>
-            body {background-color: #efefef; font-family: 'Fraunces', serif; margin: 0; padding: 0;}
+            body {
+                background-color: #efefef;
+                font-family: 'Fraunces', serif;
+                margin: 0;
+                padding: 0;
+            }
 
-            /*Navbar*/
-            .navbar ul {list-style-type: none; background-color: #fcc97c; padding: 0; margin: 0; overflow: hidden;}
-            .navbar a {color: white; text-decoration: none; padding: 15px; display: block; text-align: center;}
-            .navbar a:hover {background-color: #fddaa5;}
-            .navbar li {float: right;}
-            div.sticky {position: sticky; top: 0px; border: 2px solid #faab32; z-index: 1000;}
+            /* Navbar */
+            .navbar ul {
+                list-style-type: none;
+                background-color: #fcc97c;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+            }
+            .navbar a:hover {
+                background-color: #fddaa5;
+            }
+            .navbar li {
+                float: right;
+            }
+            div.sticky {
+                position: sticky;
+                top: 0;
+                border: 2px solid #faab32;
+                z-index: 1000;
+            }
 
-            /*Scroller*/
-            ::-webkit-scrollbar {width: 10px;}
-            ::-webkit-scrollbar-track {background: #436a96;}
-            ::-webkit-scrollbar-thumb {background: #86a8e1;}
-            ::-webkit-scrollbar-thumb:hover {background: #acc3ea;}
+            /* Scroller */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #436a96;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #86a8e1;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #acc3ea;
+            }
 
-            /*Image and download button*/
-            h1 {color: #436a96; text-align: center; margin: 20px 0;}
-            .download {width: 20%; height: auto;}
-            .download:hover {content: url(Downloadlighter.png);}
-            .image_container {text-align: center;margin: 20px auto;}
-            .image_container img {display: inline-block;max-width: 100%;height: auto;}
+            /* Image and download button */
+            h1 {
+                color: #436a96;
+                text-align: center;
+                margin: 20px 0;
+            }
+            .download {
+                width: 20%;
+                height: auto;
+            }
+            .download:hover {
+                content: url(resume/Downloadlighter.png);
+            }
+            .image_container {
+                text-align: center;
+                margin: 20px auto;
+                z-index: 2;
+            }
+            .image_container img {
+                display: inline-block;
+                max-width: 100%;
+                height: auto;
+            }
 
-            /*Groovy videos*/
-            .video-container1,.video-container2 {position: absolute; overflow: hidden;}
-            .video-container1 {top: 300px; left: -100px; width: 100%; max-width: 400px;}
-            .video-container1 video {width: 100%; height: auto; display: block; clip-path: inset(1px 1px); outline: 5px solid #efefef; outline-offset: -5px;}
-            .video-container2 {top: 350px; right: 0; width: 100%; max-width: 300px;}
-            .video-container2 video {width: 100%; height: auto; display: block;}
+            /* Groovy videos */
+            .video-container {
+                margin: 20px auto;
+                text-align: center;
+                max-width: 100%;
+            }
+            .video-container video {
+                width: 90%;
+                max-width: 400px;
+                height: auto;
+                display: inline-block;
+                outline: 5px solid #efefef;
+                outline-offset: -5px;
+            }
 
-            /*Responsive*/
+            /* Responsive */
             @media (max-width: 768px) {
-                .video-container1 {top: 150px; left: 0; max-width: 300px;}
-                .video-container2 {top: 200px; right: 0; max-width: 250px;}
-                .download {width: 30%;}
-                h1 {font-size: 1.5em;}
+                .download {
+                    width: 30%;
+                }
+                h1 {
+                    font-size: 1.5em;
+                }
+                .image_container img {
+                    max-width: 90%;
+                }
             }
 
             @media (max-width: 480px) {
-                .video-container1 {top: 100px; left: 0; max-width: 250px;}
-                .video-container2 {top: 150px; right: 0; max-width: 200px;}
-                .download {width: 40%;}
-                h1 {font-size: 1.2em;}
-                .image_container img {max-width: 90%;}
+                .download {
+                    width: 40%;
+                }
+                h1 {
+                    font-size: 1.2em;
+                }
+                .image_container img {
+                    max-width: 100%;
+                }
             }
         </style>
     </head>
@@ -73,23 +141,23 @@
         <!-- Resume img and download link -->
         <h1>Download my resume!</h1>
         <div class="image_container">
-            <a href="JuliannaMarshallResume2024.pdf" download>
-                <img src="Download.png" class="download">
+            <a href="resume/JuliannaMarshallResume2024.pdf" download>
+                <img src="resume/Download.png" class="download">
             </a>
             <br>
-            <img src="JuliannaMarshallResume2024.pdf.jpg" alt="Julianna Marshall Resume" width="550" height="600" style="border: 5px solid #74a3f3; box-shadow: 0 0 0 5px #ee74bf; margin-top: 30px;">
+            <img src="resume/JuliannaMarshallResume2024.pdf.jpg" alt="Julianna Marshall Resume" width="550" height="600" style="border: 5px solid #74a3f3; box-shadow: 0 0 0 5px #ee74bf; margin-top: 30px;">
         </div>
 
         <!-- Background art -->
-        <div class="video-container1">
+        <div class="video-container">
             <video autoplay muted playsinline>
-                <source src="groovy3.mp4" type="video/mp4">
+                <source src="page designs/groovy3.mp4" type="video/mp4">
                 Your browser does not support the video tag
             </video>
         </div>
-        <div class="video-container2">
+        <div class="video-container">
             <video autoplay muted playsinline>
-                <source src="groovy4.mp4" type="video/mp4">
+                <source src="page designs/groovy4.mp4" type="video/mp4">
                 Your browser does not support the video tag
             </video>
         </div>
