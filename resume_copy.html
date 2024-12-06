@@ -84,34 +84,65 @@
             }
 
             /* Groovy videos */
-            .video-container {
-                margin: 20px auto;
-                text-align: center;
-                max-width: 100%;
-            }
-            .video-container video {
-                width: 90%;
+            .video-container1 {
+                position: absolute;
+                top: 300px;
+                left: -100px;
+                width: 100%;
                 max-width: 400px;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .video-container1 video {
+                width: 100%;
                 height: auto;
-                display: inline-block;
+                display: block;
+                clip-path: inset(1px 1px);
                 outline: 5px solid #efefef;
                 outline-offset: -5px;
+            }
+            .video-container2 {
+                position: absolute;
+                top: 350px;
+                right: 0;
+                width: 100%;
+                max-width: 300px;
+                overflow: hidden;
+                z-index: 1;
+            }
+            .video-container2 video {
+                width: 100%;
+                height: auto;
+                display: block;
             }
 
             /* Responsive */
             @media (max-width: 768px) {
+                .video-container1 {
+                    top: 400px; /* Move the first video lower */
+                    left: -50px; /* Adjust positioning */
+                }
+                .video-container2 {
+                    top: 450px; /* Move the second video lower */
+                    right: -20px; /* Adjust positioning */
+                }
                 .download {
                     width: 30%;
                 }
                 h1 {
                     font-size: 1.5em;
                 }
-                .image_container img {
-                    max-width: 90%;
-                }
             }
 
             @media (max-width: 480px) {
+                .video-container1 {
+                    top: 500px; /* Move the first video further down */
+                    left: 0; /* Center horizontally */
+                }
+                .video-container2 {
+                    top: 550px; /* Move the second video further down */
+                    right: 0; /* Center horizontally */
+                }
                 .download {
                     width: 40%;
                 }
@@ -119,7 +150,7 @@
                     font-size: 1.2em;
                 }
                 .image_container img {
-                    max-width: 100%;
+                    max-width: 90%;
                 }
             }
         </style>
@@ -149,13 +180,13 @@
         </div>
 
         <!-- Background art -->
-        <div class="video-container">
+        <div class="video-container1">
             <video autoplay muted playsinline>
                 <source src="page designs/groovy3.mp4" type="video/mp4">
                 Your browser does not support the video tag
             </video>
         </div>
-        <div class="video-container">
+        <div class="video-container2">
             <video autoplay muted playsinline>
                 <source src="page designs/groovy4.mp4" type="video/mp4">
                 Your browser does not support the video tag
