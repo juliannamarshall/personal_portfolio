@@ -33,23 +33,22 @@
             .image_container img {display: inline-block;max-width: 100%;height: auto;}
 
             /*Groovy videos*/
-            .video-container1,.video-container2 {position: absolute; overflow: hidden;}
-            .video-container1 {top: 300px; left: -100px; width: 100%; max-width: 400px;}
+            .video-container1 {position: absolute; top: 300px; left: -100px; width: 100%; max-width: 400px; overflow: hidden;}
             .video-container1 video {width: 100%; height: auto; display: block; clip-path: inset(1px 1px); outline: 5px solid #efefef; outline-offset: -5px;}
-            .video-container2 {top: 350px; right: 0; width: 100%; max-width: 300px;}
+            .video-container2 {position: absolute; top: 350px; right: 0; width: 100%; max-width: 300px; overflow: hidden;}
             .video-container2 video {width: 100%; height: auto; display: block;}
 
             /*Responsive*/
             @media (max-width: 768px) {
-                .video-container1 {top: 150px; left: 0; max-width: 250px;}
-                .video-container2 {top: 200px; right: 0; max-width: 200px;}
+                .video-container1 {top: 150px; left: 0; max-width: 200px;}
+                .video-container2 {top: 200px; right: 0; max-width: 150px;}
                 .download {width: 30%;}
                 h1 {font-size: 1.5em;}
             }
 
             @media (max-width: 480px) {
-                .video-container1 {top: 100px; left: 0; max-width: 200px;}
-                .video-container2 {top: 150px; right: 0; max-width: 150px;}
+                .video-container1 {top: 100px; left: 0; max-width: 150px;}
+                .video-container2 {top: 150px; right: 0; max-width: 100px;}
                 .download {width: 40%;}
                 h1 {font-size: 1.2em;}
                 .image_container img {max-width: 90%;}
@@ -93,5 +92,6 @@
                 Your browser does not support the video tag
             </video>
         </div>
+        <p>updated</p>
     </body>
 </html>
