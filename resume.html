@@ -26,8 +26,10 @@
             ::-webkit-scrollbar-thumb:hover{background: #acc3ea;}
 
             h1{color:#436a96; text-align: center;}
-            .download{width: 20%; height: auto; margin-left: 500px;}
+            .download{width: 20%; height: auto;}
             .download:hover{content: url(Downloadlighter.png);}
+            .image_container{text-align: center;}
+            .image_container img{display: inline-block;}
         </style>
     </head>
     <body>
@@ -44,10 +46,12 @@
             </nav>
         </div>
         <h1>Download my resume!</h1>
-        <a href="JuliannaMarshallResume2024.pdf" download>
-            <img src="Download.png" class="download">
-        </a>
-        <img src="JuliannaMarshallResume2024.pdf.jpg" alt="Julianna Marshall Resume" width="550" height="600" style="border: 5px solid #74a3f3; box-shadow: 0 0 0 5px #ee74bf; margin-left: 350px; margin-top: 30px;">
-
+        <div class="image_container">
+            <a href="JuliannaMarshallResume2024.pdf" download>
+                <img src="Download.png" class="download">
+            </a>
+            <br>
+            <img src="JuliannaMarshallResume2024.pdf.jpg" alt="Julianna Marshall Resume" width="550" height="600" style="border: 5px solid #74a3f3; box-shadow: 0 0 0 5px #ee74bf; margin-top: 30px;">
+        </div>
     </body>
 </html>
