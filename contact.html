@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="icon.png">
 
         <style>
-            body {background-color: #f1f1f0; font-family: 'Fraunces', serif;}
+            body {background-color: #efefef; font-family: 'Fraunces', serif;}
 
             /*Navbar*/
             .navbar ul{list-style-type: none; background-color: #fcc97c; padding: 0px; margin: 0px; overflow: hidden;}
@@ -24,6 +24,19 @@
             ::-webkit-scrollbar-track{background: #436a96;}
             ::-webkit-scrollbar-thumb{background: #86a8e1;}
             ::-webkit-scrollbar-thumb:hover{background: #acc3ea;}
+
+            h1 {color: #436a96; text-align: center; margin: 20px 0;}
+
+            /*Icons*/
+            .image_container {position: relative; text-align: left; margin: 20px auto; margin-left: 300px; z-index: 2; align-items: center; display: flex;}
+            .image_container img {display: inline-block; max-width: 100%; height: auto; margin-bottom: 10px;}
+            p{display: inline-block; margin-left: 15px; font-size: 32px; color: #436a96;}
+
+            /*Groovy videos*/
+            .video-container1 {position: absolute; top: 300px; left: -100px; width: 100%; max-width: 400px; overflow: hidden; z-index: 1;}
+            .video-container1 video {width: 100%; height: auto; display: block; clip-path: inset(1px 1px); outline: 5px solid #efefef; outline-offset: -5px;}
+            .video-container2 {position: absolute; top: 300px; right: 0; width: 100%; max-width: 300px; overflow: hidden; z-index: 1;}
+            .video-container2 video { width: 100%; height: auto; display: block;}
         </style>
     </head>
     <body>
@@ -39,7 +52,37 @@
                 </ul>
             </nav>
         </div>
-        <h1>I'm sorry!</h1>
-        <h4>This page is currently under construction. Stay tuned to see the finished product!</h4>
+
+        <h1>How you can reach me:</h1>
+        <!-- Background art -->
+        <div class="video-container1">
+            <video autoplay muted playsinline>
+                <source src="page designs/groovy3.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
+        </div>
+        <div class="video-container2">
+            <video autoplay muted playsinline>
+                <source src="page designs/groovy4.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
+        </div>
+
+        <!--Icons-->
+        <div class="image_container" style="margin-top: 80px;">
+            <img src="contact/linkedin.png" width="100px">
+            <p>juliannamarshall</p>
+        </div>
+        <br>
+        <div class="image_container">
+            <img src="contact/mail.png" width="100px">
+            <p>juliannamarshall03@gmail.com</p>
+        </div>
+        <br>
+        <div class="image_container">
+            <img src="contact/phone.png" width="100px">
+            <p>(816) 988-6221</p>
+        </div>
+        <br>
     </body>
 </html>
